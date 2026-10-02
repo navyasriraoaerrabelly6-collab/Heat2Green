@@ -1,0 +1,61 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Plus Jakarta Sans', 'Source Sans 3', system-ui, -apple-system, sans-serif;
+  }
+  
+  .font-mono-data {
+    font-family: 'JetBrains Mono', monospace;
+    font-variant-numeric: tabular-nums;
+  }
+}
+
+/* Accessibility: High Contrast Mode */
+body.high-contrast {
+  filter: contrast(125%);
+}
+body.high-contrast * {
+  border-color: #000 !important;
+}
+
+/* Custom Leaflet Map styling */
+.leaflet-container {
+  font-family: inherit;
+  width: 100%;
+  height: 100%;
+  background-color: #e5ece8;
+  z-index: 10;
+}
+
+.custom-leaflet-popup .leaflet-popup-content-wrapper {
+  padding: 0;
+  border-radius: 8px;
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.15), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
+  border: 1px solid #d1d5db;
+  overflow: hidden;
+}
+
+.custom-leaflet-popup .leaflet-popup-content {
+  margin: 0;
+  line-height: 1.4;
+}
+
+.custom-leaflet-popup .leaflet-popup-tip {
+  background: #ffffff;
+  border: 1px solid #d1d5db;
+}
+
+/* Print styles for Government Reports */
+@media print {
+  header, footer, .no-print {
+    display: none !important;
+  }
+  .print-only {
+    display: block !important;
+  }
+  body {
+    background: #ffffff !important;
+    color: #000000 !important;
+  }
+}

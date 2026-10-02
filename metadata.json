@@ -1,0 +1,6 @@
+{
+  "name": "Heat2Green - Urban Heat Intelligence & Smart Green Planning Platform",
+  "description": "AI-assisted urban heat analysis, hotspot detection, and GIS-powered smart green infrastructure planning for Indian cities.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
